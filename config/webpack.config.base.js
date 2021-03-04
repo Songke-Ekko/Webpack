@@ -78,6 +78,7 @@ module.exports = {
       filename: 'static/css/[name].[contenthash:8].css',
       chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   // Loaders 是在打包构建过程中用来处理源文件的 (JSX, Scss, Less)，一次只能处理一个
   module: {
